@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "dad7528e-f75f-416f-9945-990a7df05a2d",
+		"name": "Health Check",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "short request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/healthcheck?format=short",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"healthcheck"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "short"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "full request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/healthcheck?format=full",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"healthcheck"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "full"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
